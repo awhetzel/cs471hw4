@@ -1,0 +1,8 @@
+    String version = "version " + jEdit.getVersion();
+
+		int drawOffsetX = (size.width / 2) - (fm.stringWidth(version) / 2);
+		int drawOffsetY = size.height - PROGRESS_HEIGHT - fm.getDescent() - 3;
+
+		paintString(g, version, drawOffsetX, drawOffsetY);
+
+		
