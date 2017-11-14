@@ -247,6 +247,14 @@ public class SplashScreen extends JComponent
 		int drawOffsetY = size.height - PROGRESS_HEIGHT - fm.getDescent() - 3;
 
 		paintString(g, version, drawOffsetX, drawOffsetY);
+	
+	
+		//XXX new stuff here ***************************************************
+		String myName = "Aaron Victor Whetzel";
+		int drawOffsetXM = (size.width / 2) - (fm.stringWidth(myName) / 2);
+		int drawOffsetYM = size.height - 300;
+		paintString(g, myName, drawOffsetXM, drawOffsetYM);
+		//XXX new stuff here ***************************************************
 	} //}}}
 
 	//{{{ paintString() method
